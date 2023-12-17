@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Практическая работа 3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <p class="positioned"><img src="image/logo9.jpg"></td></p>
+        <h1>ПОИСКОВЫЙ КАТАЛОГ</h1>
+
+        <label for="searchText"></label>
+        <input type="text" id="searchText">
+        <button onclick="highlightMatches()">Поиск</button>
+        <br>
+        <div id="matchesCount"></div>
+        <div id="content">
+        <table id="courseTable">
+            <thead>
+            <tr>
+                <th>Рейтинг</th>
+                <th>Картинка</th>
+                <th>Ссылка</th>
+                <th>Название</th>
+                <th>Описание</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><span class="star">&#9733;<br>4</td></span>
+                <td><img src="image/logo1.jpg"></td>
+                <td><a href="https://practicum.yandex.ru/">https://practicum.yandex.ru/</a> <button onclick="copyToClipboard('https://practicum.yandex.ru/')" id="copy1" class="proz">&#128279 </button></td>
+                <td>Яндекс.Практикум</td>
+                <td>Практикум — международный сервис онлайн-образования, запущенный компанией Яндекс в 2019 году. Обучение проходит в собственной технологической среде компании, что позволяет сразу применять полученные знания на практике.<p>Ключевые слова: CSS, JS, C#, C++</p></td>
+            </tr>
+            <tr>
+                <td><span class="star">&#9733;<br>5</td></span>
+                <td><img src="image/logo2.jpg"></td>
+                <td><a href="https://skillbox.ru/code/">https://skillbox.ru/code/</a> <button onclick="copyToClipboard('https://skillbox.ru/code/')" id="copy2" class="proz">&#128279 </button></td>
+                <td>Skillbox</td>
+                <td>Skillbox — российская компания, работающая в сфере онлайн-образования, основанная в 2016 году, входит в образовательный холдинг Skillbox Holding Limited.<p>Ключевые слова: CSS, JS, C#, C++, Java, Python, WEB, 1C, SQL</p></td>
+            </tr>
+            <tr>
+                <td><span class="star">&#9733;<br>2</td></span>
+                <td><img src="image/logo3.jpg"></td>
+                <td><a href="https://skillfactory.ru/courses/programmirovanie">https://skillfactory.ru/courses/</a> <button onclick="copyToClipboard('https://skillfactory.ru/courses/')" id="copy3" class="proz">&#128279 </button></td>
+                <td>Skillfactory</td>
+                <td>Skillfactory — российская компания в сфере онлайн-образования, основанная в 2016 году. Skillfactory предлагает курсы по Data Science, аналитике данных, программированию, IT-менеджменту и дизайну.<p>Ключевые слова: CSS, JS, C#, C++, Java, Python, WEB, Unity, PHP, 1C, Git</p></td>
+            </tr>
+            <tr>
+                <td><span class="star">&#9733;<br>3</td></span>
+                <td><img src="image/logo4.jpg"></td>
+                <td><a href="https://netology.ru/development">https://netology.ru/development/</a> <button onclick="copyToClipboard('https://netology.ru/development/')" id="copy4" class="proz">&#128279 </button></td>
+                <td>Нетология</td>
+                <td>«Нетология» – это программный комплекс, представляющий из себя витрину образовательных программ по направлениям маркетинга, программирования, дизайна, аналитики и управления, а также платформу для обучения (LMS).<p>Ключевые слова: CSS, JS, C#, C++, Java, Python, WEB</p></td>
+            </tr>
+            <tr>
+                <td><span class="star">&#9733;<br>3</td></span>
+                <td><img src="image/logo5.jpg"></td>
+                <td><a href="https://itvdn.com/ru">https://itvdn.com/ru/</a> <button onclick="copyToClipboard('https://itvdn.com/ru/')" id="copy5" class="proz">&#128279 </button></td>
+                <td>ITVDN</td>
+                <td>ITVDN - обучение языкам программирования и информационным технологиям всех, кто хочет стать профессионалом в сфере разработки программного обеспечения, проектирования сложных программных систем, веб-разработки и в смежных областях.<p>Ключевые слова: CSS, JS, C#, C++, Java</p></td>
+            </tr>
+            <tr>
+                <td><span class="star">&#9733;<br>5</td></span>
+                <td><img src="image/logo6.jpg"></td>
+                <td><a href="https://gb.ru/geek_university/developer">https://gb.ru/geek_university/</a> <button onclick="copyToClipboard('https://gb.ru/geek_university/')" id="copy6" class="proz">&#128279 </button></td>
+                <td>GeekBrains</td>
+                <td>GeekBrains — российская компания в сфере онлайн-образования, основанная в 2010 году. Образовательная платформа GeekBrains предлагает курсы по информационным технологиям, программированию, аналитике, тестированию, маркетингу, управлению и дизайну.<p>Ключевые слова: CSS, JS, C#, C++, C, SQL, GIT, .NET, HTML/CSS</p></td>
+            </tr>
+            <tr>
+                <td><span class="star">&#9733;<br>4</td></span>
+                <td><img src="image/logo7.jpg"></td>
+                <td><a href="https://ru.hexlet.io/">https://ru.hexlet.io/</a> <button onclick="copyToClipboard('https://ru.hexlet.io/')" id="copy7" class="proz">&#128279 </button></td>
+                <td>Hexlet.io</td>
+                <td>Хекслет — лучшая школа программирования по версии пользователей Хабра.<p>Ключевые слова: CSS, JS, C#, C++, PHP, Ruby, Java</p></td>
+            </tr>
+            <tr>
+                <td><span class="star">&#9733;<br>3</td></span>
+                <td><img src="image/logo8.jpg"></td>
+                <td><a href="https://stepik.org/catalog">https://stepik.org/catalog/</a> <button onclick="copyToClipboard('https://stepik.org/catalog/')" id="copy8" class="proz">&#128279 </button></td>
+                <td>Stepic</td>
+                <td>Stepik – это маркетплейс онлайн-курсов от профессионалов. Мы развиваем платформу для обучения и даём возможность авторам создавать онлайн-курсы в удобном конструкторе.<p>Ключевые слова: CSS, JS, C#, C++, Python, Java, SQL</p></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+        <script>
+            function copyToClipboard(text) {
+                var tempInput = document.createElement('input');
+                tempInput.style.position = 'fixed';
+                tempInput.style.opacity = '0';
+                tempInput.value = text;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+            }
+        </script>
+    </body>
+</html>
